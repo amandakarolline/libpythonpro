@@ -23,7 +23,7 @@ jobs:
 
       - name: Instalar Dependências
         run: |
-          pip install -r requirements-dev.txt
+          pip install -q -r requirements-dev.txt
 
       - name: Rodar Flake8
         run: |
