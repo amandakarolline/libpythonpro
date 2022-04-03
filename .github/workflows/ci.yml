@@ -1,0 +1,26 @@
+name: Python Tools
+
+on: [pull_request]
+
+jobs:
+  build:
+    env:
+      PIPENV_NO_INHERIT: 1
+      PIPENV_IGNORE_VITUALENV: 1
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+
+      - name: Instalar Dependências
+        run: |
+          pip install -r requirements-dev.txt
+
+      - name: Rodar Flake8
+        run: |
+          flake8
