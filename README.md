@@ -7,6 +7,7 @@ Link do curso [Python Pro](https://pythonpro.com.br/)
 
 [![Updates](https://pyup.io/repos/github/amandakarolline/libpythonpro/shield.svg)](https://pyup.io/repos/github/amandakarolline/libpythonpro/)
 [![Python 3](https://pyup.io/repos/github/amandakarolline/libpythonpro/python-3-shield.svg)](https://pyup.io/repos/github/amandakarolline/libpythonpro/)
+[![codecov](https://codecov.io/gh/amandakarolline/libpythonpro/branch/main/graph/badge.svg?token=sfScKqn8r1)](https://codecov.io/gh/amandakarolline/libpythonpro)
 
 Suportada versão 3 de Python
 
