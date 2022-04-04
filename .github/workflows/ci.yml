@@ -23,7 +23,7 @@ jobs:
 
       - name: Instalar Dependências
         run: |
-          pip install -q -r requirements-dev.txt
+          pip install -q -r requirements-dev.txt codecov
 
       - name: Rodar Flake8
         run: |
@@ -31,4 +31,8 @@ jobs:
 
       - name: Rodar Testes
         run: |
-          pytest libpythonpro
+          pytest libpythonpro --cov=libpythonpro
+
+      - name: Relatorio Codecove
+        run: |
+          codecov
