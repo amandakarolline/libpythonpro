@@ -28,3 +28,7 @@ jobs:
       - name: Rodar Flake8
         run: |
           flake8
+
+      - name: Rodar Testes
+        run: |
+          pytest libpythonpro
