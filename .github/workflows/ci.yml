@@ -21,9 +21,13 @@ jobs:
         with:
           python-version: 3.9
 
+      - name: Instalar Pipenv e Codecov
+        run: |
+          pip install -q pipenv codecov
+
       - name: Instalar Dependências
         run: |
-          pip install -q -r requirements-dev.txt codecov
+          pipenv sync --dev
 
       - name: Rodar Flake8
         run: |
