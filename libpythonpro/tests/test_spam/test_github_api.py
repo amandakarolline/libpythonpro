@@ -8,9 +8,9 @@ from libpythonpro import github_api
 @pytest.fixture
 def avatar_url(mocker):
     resp_mock = Mock()
-    url = 'https://avatars3.githubusercontent.com/u/402714?v=4'
+    url = 'https://avatars.githubusercontent.com/u/29805670?v=4'
     resp_mock.json.return_value = {
-        'login': 'renzo', 'id': 402714,
+        'login': 'amandakarolline', 'id': 29805670,
         'avatar_url': url,
     }
     get_mock = mocker.patch('libpythonpro.github_api.requests.get')
