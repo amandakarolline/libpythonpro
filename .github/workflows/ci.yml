@@ -27,7 +27,7 @@ jobs:
 
       - name: Instalar Dependências
         run: |
-          pipenv sync --dev
+          pipenv sync -d
 
       - name: Rodar Flake8
         run: |
