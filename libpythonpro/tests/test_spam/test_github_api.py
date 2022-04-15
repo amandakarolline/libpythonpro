@@ -1,8 +1,7 @@
 from unittest.mock import Mock
-
 import pytest
-
 from libpythonpro import github_api
+
 
 @pytest.fixture
 def avatar_url():
