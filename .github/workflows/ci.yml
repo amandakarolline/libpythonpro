@@ -41,9 +41,3 @@ jobs:
       - name: Relatorio Codecove
         run: |
           codecov
-
-      - name: Run Security check with PyUp
-        env:
-          SAFETY_API_KEY: ${{secrets.SAFETY_API_KEY}}
-        run: safety check --key $SAFETY_API_KEY
-        continue-on-error: false
