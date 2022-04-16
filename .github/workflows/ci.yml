@@ -28,7 +28,6 @@ jobs:
       - name: Instalar Dependências
         run: |
           pipenv sync -d
-          pip install safety
 
       - name: Rodar Flake8
         run: |
